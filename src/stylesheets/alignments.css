@@ -15,6 +15,9 @@
 .w-screen {
   width: 100vh;
 }
+.w-100{
+  width: 100%;
+}
 .w-75 {
   width: 75%;
 }
@@ -23,6 +26,9 @@
 }
 .w-25 {
   width: 25%;
+}
+.w-400{
+  width: 400px;
 }
 /* Flex box */
 .flex{
@@ -43,13 +49,13 @@
 .justify-end{
     justify-content: flex-end;
 }
-.item-center{
+.items-center{
     align-items: center;
 }
-.item-start{
+.items-start{
     align-items: flex-start;
 }
-.item-end{
+.items-end{
     align-items: flex-end;
 }
 /* Gap property */
@@ -67,4 +73,33 @@
 }
 .gap-5{
     gap: 50px;
+}
+/* Padding property */
+.p-5{
+  padding: 50px;
+}
+.p-4{
+  padding: 40px;
+}
+.p-3{
+  padding: 30px;
+}
+.p-2{
+  padding: 20px;
+}
+.p-1{
+  padding: 10px;
+}
+/* margin property */
+.mt-1{
+ margin-top: 10px;
+}
+.mt-2{
+ margin-top: 20px;
+}
+.mt-3{
+ margin-top: 30px;
+}
+.mt-4{
+ margin-top: 40px;
 }
