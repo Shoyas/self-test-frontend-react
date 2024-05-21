@@ -15,7 +15,7 @@ const Login = () => {
               <input type="text" placeholder="Enter email" required/>
             </Form.Item>
             <Form.Item name="password" label="Password">
-              <input type="text" placeholder="Enter password" required/>
+              <input type="password" placeholder="Enter password" required/>
             </Form.Item>
             <div className="flex flex-col gap-2">
               <button type="submit" className="primary-contained-btn mt-2">
