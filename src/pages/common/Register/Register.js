@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { registerUser } from "../../../apicalls/users";
 
 const Register = () => {
+  const [form] = Form.useForm();
   const onSubmitRegistration = async (values) => {
     try {
       const response = await registerUser(values);
@@ -11,9 +12,11 @@ const Register = () => {
       } else {
         message.error(response.message);
       }
+      form.resetFields();
     } catch (error) {
       message.error(error.message);
     }
+
   };
   return (
     <div className="flex justify-center items-center h-screen w-100">
@@ -23,6 +26,7 @@ const Register = () => {
           <Form
             layout="vertical"
             className="mt-2"
+            form ={form}
             onFinish={onSubmitRegistration}
           >
             <Form.Item name="name" label="Name">
