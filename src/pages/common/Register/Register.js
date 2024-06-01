@@ -1,6 +1,6 @@
 import { Form, message } from "antd";
 import { Link } from "react-router-dom";
-import { registerUser } from "../../../apicalls/users";
+import { registerUser } from "../../../api-calls/users";
 
 const Register = () => {
   const [form] = Form.useForm();
