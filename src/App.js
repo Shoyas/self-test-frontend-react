@@ -8,12 +8,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/common/Login/Login";
 import Home from "./pages/common/Home/Home";
 import Register from "./pages/common/Register/Register";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
