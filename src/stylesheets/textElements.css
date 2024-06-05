@@ -31,3 +31,13 @@ a:hover {
   color: var(--primary) !important;
   text-decoration: underline !important;
 }
+.text-white {
+  color: white;
+}
+i{
+  font-size: 20px;
+  cursor: pointer;
+}
+.underline{
+  text-decoration: underline;
+}
